@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+        }
+
+        .container {
+            height: 60vh;
+            width: 30vw;
+            background-color: lightgray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 90%;
+            height: 10%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+        button {
+            background-color: green;
+            width: 90%;
+            height: 15%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+   
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <div class="display">
+                <h1 id="demo">Result</h1>
+            </div>
+            <!-- first input -->
+            <input type="number" id="first-number" placeholder="Enter first number">
+            <br />
+            <br />
+            <!-- Button -->
+            <button type="button" onclick=" Result()">Result</button>
+        </div>
+    </div>
+    <script>
+        function Result() {
+            // input
+            const input = document.getElementById("first-number").value;
+            let output = "";
+            // processing
+            if (input % 3 == 0 && input % 5 == 0) {
+                output = "FizzBuzz";
+            } else if (input % 3 == 0) {
+                output = "Fizz";
+            } else if (input % 5 == 0) {
+                output = "Buzz"
+            } else {
+                output = "Not FizzBuzz"
+            }
+            // output
+            document.getElementById("demo").innerHTML = output;
+        }    
+    </script>
+
+</body>
+
+</html>

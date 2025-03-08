@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 70%;
+            width: 30%;
+            background-color: white;
+            padding-bottom: 1.5%;
+            text-align: center;
+
+        }
+
+        .box-one {
+            height: 25%;
+            width: 100%;
+            background-color: gray;
+            padding-top: 5%;
+        }
+
+        .box-two {
+            height: 75%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+
+        }
+
+        .box {
+            border-style: solid;
+            text-align: center;
+        }
+       
+    </style>
+    <script>
+        function numberType(chintu) {
+            document.getElementById("display").innerHTML += chintu;
+        }
+        function equalstoo() {
+            const display = document.getElementById('display');
+            try {
+                display.innerText = eval(display.innerText);
+            } catch {
+                display.innerText = 'Error';
+            }
+        }
+        function clearfunc() {
+            document.getElementById('display').innerHTML = "";
+        }
+        function deleteLast() {
+            const display = document.getElementById('display');
+            if (display.innerText.length === 1 || display.innerText === 'Error') {
+                display.innerText = '0';
+            } else {
+                display.innerText = display.innerText.slice(0, -1);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="box-one">
+                <h1 id="display"></h1>
+            </div>
+            <div class="box-two">
+                <div class="box"><button class="btn" onclick="numberType(7)">7</button></div>
+                <div class="box"><button class="btn" onclick="numberType(8)">8</button></div>
+                <div class="box"><button class="btn" onclick="numberType(9)">9</button></div>
+                <div class="box"><button onclick="deleteLast()">Del</button></div>
+                <div class="box"><button class="btn" onclick="numberType('%')">%</button></div>
+
+                <div class="box"><button class="btn" onclick="numberType(4)">4</button></div>
+                <div class="box"><button class="btn" onclick="numberType(5)">5</button></div>
+                <div class="box"><button class="btn" onclick="numberType(6)">6</button></div>
+                <div class="box"><button class="btn" onclick="numberType('*')">*</button></div>
+                <div class="box"><button class="btn" onclick="numberType('/')">/</button></div>
+
+                <div class="box"><button class="btn" onclick="numberType(1)">1</button></div>
+                <div class="box"><button class="btn" onclick="numberType(2)">2</button></div>
+                <div class="box"><button class="btn" onclick="numberType(3)">3</button></div>
+                <div class="box"><button class="btn" onclick="numberType('+')">+</button></div>
+                <div class="box"><button class="btn" onclick="numberType('-')">-</button></div>
+
+                <div style="background-color: brown;" class="box"><button type="button"
+                        onclick="clearfunc()">AC</button></div>
+                <div class="box"><button class="btn" onclick="numberType(0)">0</button></div>
+                <div class="box"><button class="btn" onclick="numberType('.')">.</button></div>
+                <div class="box"><button class="btn" onclick="equalstoo('=')">=</button></div>
+                <div class="box"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

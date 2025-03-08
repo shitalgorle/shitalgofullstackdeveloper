@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>javascript</title>
+    <style>
+      div {
+        width: 50vw;
+        height: 80vh;
+        border: solid;
+        text-align: center;
+        margin-left: 20%;
+        font-size: 60px;
+      }
+      button {
+        font-size: 20px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <div>
+    <body>
+      <p>Bulb On-Off</p>
+      <button
+        onclick="document.getElementById('demo').src='../assets/images/bulbon.jpeg'"
+      >
+        Turn on the light
+      </button>
+
+      <img id="demo" src="../assets/images/bulboff.jpeg" style="width: 150px" />
+
+      <button
+        onclick="document.getElementById('demo').src='../assets/images/bulboff.jpeg'"
+      >
+        Turn off the light
+      </button>
+    </body>
+  </div>
+</html>

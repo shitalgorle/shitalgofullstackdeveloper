@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        /* container */
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: #8EA3A6;
+            text-align: center;
+            padding: 5%;
+            margin-top: 30px;
+        }
+
+        /* box */
+        .box {
+            height: 10vh;
+            width: 70vh;
+            background-color: white;
+            font-size: medium;
+        }
+
+        /* button */
+        button {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 8%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 90%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+</style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <div class="box">
+                <h1 id="demo">Result</h1>
+            </div>
+            <br>
+            <br>
+            <!-- first input -->
+            <label for="text"></label>
+            <input type="text" id="first-number" placeholder="Enter first-number">
+            <br />
+            <br />
+            <!-- second input -->
+            <label for="number"></label>
+            <input type="number" id="second-number" placeholder="Enter second-number">
+            <br />
+            <br />
+            <br>
+            <!-- third input -->
+            <label for="number"></label>
+            <input type="number" id="third-number" placeholder="Enter third-number">
+            <br />
+            <br />
+            <br>
+            <!-- button -->
+            <button type="button" onclick="result()">Get Result </button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <script>
+        function result() {
+            let x = document.getElementById("first-number").value
+            let y = document.getElementById("second-number").value
+            let z = document.getElementById("third-number").value
+            if (x == y && x == z) {
+                document.getElementById("demo").innerHTML = 'Euilateral';
+            }
+            // else if (x == y && y != z)  {
+            else if (x === y || y === z || x === z) {
+                document.getElementById("demo").innerHTML = 'Isosceles';
+            }
+            else {
+                document.getElementById("demo").innerHTML = 'Scalene';
+            }
+        }
+
+    </script>
+</body>
+
+</html

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../assets/images/back2.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 25%;
+            height: 50%;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .box {
+            width: 50%;
+            height: 50%;
+        }
+    
+
+        #display {
+            height: 30px;
+            width: 150px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #72BF78;
+            width: 80px;
+            height: 15%;
+            font-size: 15px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<script>
+    function sayGood() {
+        document.getElementById("display").value = "Good"
+
+    }
+
+</script>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="box">
+                <input type="text" id="enter name" placeholder="Display" readonly style="text-align: center;">
+                <br>
+                <br>
+                <!-- <input type="number" id="display" placeholder="username"> -->
+                <br>
+                <br>
+           
+                <button type="button" onclick="sayGood()">submit </button>
+        
+        </div>
+
+    </div>
+</body>
+
+</html>

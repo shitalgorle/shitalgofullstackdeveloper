@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        /* container */
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: gray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 30px;
+        }
+
+        /* box */
+        .box {
+            height: 10vh;
+            width: 65vh;
+            background-color: white;
+        }
+
+        /* button */
+        button {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 8%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 90%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <h1 style="color: blue;">Login</h1>
+            <br>
+            <div class="box">
+                <h1 id="demo">Result</h1>
+            </div>
+            <br>
+            <br>
+            <!-- first input -->
+            <input type="text" id="first-name" placeholder="Enter username">
+            <br />
+            <br />
+            <!-- second input -->
+            <input type="password" id="second-number" placeholder="Enter password">
+            <br />
+            <br />
+            <!-- button -->
+            <button type="button" onclick="login()">Login</button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <script>
+        // function login() {
+        //     // input
+        //     let x = document.getElementById("first-name").value;
+        //     let y = document.getElementById("second-number").value;
+
+        //     // process
+        //     let z = (x == "admin" && y == "pass123") ? "Login Successful" : "Login Unsuccessful";
+
+        //     // output
+        //     document.getElementById("demo").innerHTML = z;
+        // }
+
+
+        let counter = 1;
+
+        function login() {
+
+            const x = document.getElementById("first-name").value;
+            const y = document.getElementById("second-number").value;
+
+            //  output
+            if (x === "admin" && y === "pass123") {
+                document.getElementById("demo").innerHTML = "Login Successful";
+                alert("Login Successful");
+            } else {
+                if (counter >= 4) {
+                    alert("You Have Reached Maximum Attempt");
+                    document.getElementById("first-name").hidden = true;
+                    document.getElementById("second-number").hidden = true;
+                }
+                    else{
+                        alert("Login Unuccessful");
+                        document.getElementById("demo").innerHTML = "Login Unuccessful";
+                    }
+                }
+                counter++;  
+            }
+        
+
+    </script>
+</body>
+
+</html>

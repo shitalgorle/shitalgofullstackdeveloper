@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../assets/images/back2.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 25%;
+            height: 50%;
+            border-style: solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-left: 50px;
+        }
+
+        .box {
+            width: 50%;
+            height: 50%;
+        }
+    
+        button {
+            background-color: #72BF78;
+            width: 80px;
+            height: 15%;
+            font-size: 15px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<script>
+
+function add(){
+ let x = document.getElementById('Input-one').value;
+ let y = document.getElementById('Input-two').value;
+ let z= Number(x)+Number(y);
+ console.log(z);
+alert(x+y);
+document.getElementById('demo').innerHTML=z;
+}
+
+
+</script>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div id="demo"></div>
+            <div class="box">
+                <input type="number" id="Input-one" placeholder="enter first number" style="text-align: center;">
+                <br>
+                <br>
+                <input type="number" id="Input-two" placeholder="enter second number" style="text-align: center;">
+                <br>
+                <br>
+                <button type="button" onclick="add()">Add </button>
+        </div>
+
+    </div>
+</body>
+
+</html>

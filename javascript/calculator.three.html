@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-color: white;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* container */
+        .container {
+            height: 90vh;
+            width: 30vw;
+            background-color: gray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 30px;
+        }
+
+        /* button */
+        button {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 8.5%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 90%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        /* display */
+        #display {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+</head>
+<script>
+
+    // function
+    
+    // function numberType(){
+        // document.getElementById("display").innerHTML = "Hello";
+    // alert("Hello");
+    // }
+        // function with parameters
+        // function numberType(x,y,z){
+        // document.getElementById("display").value = x+y+z;
+    // alert("x + y + z");
+    // }
+
+
+    // function with multiple parameters
+
+    // function numberType(x,y,z){
+    //     let a = x + y;
+    //     document.getElementById("display").value = z + a;
+    // alert("z + a");
+
+    // }
+
+    // extra example of function returning value
+    // function numberType(x){
+    //     add();
+    //     alert("result");
+    // }
+    // function add(){
+    //     let x = 10;
+    //     let y = 20;
+    //     let result = x + y;
+    //     return result;
+     
+        
+    // }
+
+    // function returning value
+
+    // function numberType(x){
+    // let result = add(x); 
+    // alert("Result: " + result);  
+
+    //    }
+
+    // function add(x){
+    // let y = 100;
+    // let result = x + y;
+    // return result;  
+    //  }
+
+
+    // recursion
+
+    function numberType(x){
+        sayHello();
+    }
+    function sayHello(){
+        alert ("Hello To My World");
+        
+    }
+</script>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <h1 id="display"></h1>
+            <br/>
+            <br/>
+            <!-- button -->
+            <button class="btn" onclick="numberType(1)">1</button>
+            <button class="btn" onclick="numberType(2)">2</button>
+            <button class="btn" onclick="numberType(3)">3</button>
+            <button class="btn" onclick="numberType(4)">4</button>
+            <button type="btn" onclick="operator('+')">+ </button>
+            <button type="btn" onclick="operator('-')">-</button>
+            <button type="btn" onclick="operator('*')">*</button>
+            <button type="btn" onclick="operator('/')">/</button>
+            <button type="btn" onclick="operator('=')">=</button>
+            <button type="btn" onclick="operator()">AC</button>
+            <button onclick="operator()">Del</button>
+        </div>
+    </div>
+</body>
+
+</html

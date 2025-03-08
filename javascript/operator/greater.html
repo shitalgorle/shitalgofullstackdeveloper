@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        /* container */
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: gray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 30px;
+        }
+
+        .box {
+            height: 10vh;
+            width: 65vh;
+            background-color: white;
+        }
+
+        /* button */
+        button {
+            background-color: green;
+            padding: 10px;
+            border-radius: 10px;
+            width: 90%;
+            height: 8%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 90%;
+            height: 5%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <div class="box">
+                <h1 id="demo">Result</h1>
+            </div>
+            <br>
+            <br>
+            <!-- first input -->
+            <input type="number" id="first-number" placeholder="Enter first number">
+            <br />
+            <br />
+            <!-- second input -->
+            <input type="number" id="second-number" placeholder="Enter second number">
+            <br />
+            <br />
+            <!-- third input -->
+            <input type="number" id="third-number" placeholder="Enter third number">
+            <br />
+            <br />
+            <!-- button -->
+            <button type="button" onclick="compare()">Compare</button>
+            <br />
+            <br />
+        </div>
+    </div>
+    <script>
+
+        function compare(){
+            let a = document.getElementById("first-number").value;
+            let b = document.getElementById("second-number").value;
+            let c = document.getElementById("third-number").value;
+          
+            if (a > b && a > c) {
+                alert ("a is greatest");
+                document.getElementById('demo').innerHTML = "a is greatest";
+
+            }
+            else if (b > a && b > c) {
+                alert ("b is greatest");
+                    document.getElementById("demo").innerHTML = "b is greatest";
+                }
+                else{
+                    alert ("c is smallest");
+                    document.getElementById("demo").innerHTML = "c is smallest";
+                }
+        }
+    
+    </script>
+</body>
+
+</html>

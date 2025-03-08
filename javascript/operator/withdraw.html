@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            height: 60vh;
+            width: 30vw;
+            background-color: lightgray;
+            text-align: center;
+            padding: 5%;
+            margin-top: 50px;
+        }
+
+        input {
+            width: 90%;
+            height: 10%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: green;
+            width: 90%;
+            height: 15%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .box {
+            height: 10vh;
+            width: 65vh;
+            background-color: white;
+           font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <br>
+            <div class="box">
+                <h1 id="demo">Result</h1>
+            </div>
+            <br>
+            <br>
+            <!-- first input -->
+            <input type="number" id="first-number" placeholder="Enter first number">
+            <br />
+            <br />
+            <!-- Button -->
+            <button type="button" onclick=" withdraw()">withdraw</button>
+        </div>
+    </div>
+    <script>
+        function withdraw() {
+            // Get the amount input from the user
+            const amount = document.getElementById("first-number").value;
+
+            const balance = 10000;
+            let output = "";
+
+            // Check if the amount is less than or equal to the balance
+            if (amount <= balance) {
+                // Check if the amount is a multiple of 100
+                if (amount % 100 === 0) {
+                    output = "Withdraw Successful";
+                } else {
+                    output = "Amount should be in multiples of 100";
+                }
+            } else {
+                output = "Insufficient funds";
+            }
+            // Display the output 
+            alert(output);
+            document.getElementById("demo").innerText = output;
+        }
+    </script>
+</body>
+
+</html>

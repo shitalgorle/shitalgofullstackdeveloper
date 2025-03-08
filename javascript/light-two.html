@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Label</title>
+    <style>
+      /* main-container */
+      .main-container {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../assets/images/back2.jpg);
+        background-size: cover;
+      }
+
+      /* container */
+      .container {
+        height: 70vh;
+        width: 30vw;
+        background-color: #9cafaa;
+        text-align: center;
+        border-style: solid;
+      }
+
+      .box-one {
+        height: 50%;
+        width: 60%;
+        margin-left: 80px;
+      }
+
+      /* button */
+      button {
+        background-color: #72bf78;
+        width: 30%;
+        height: 10%;
+        font-size: 20px;
+        gap: 40px;
+        cursor: pointer;
+      }
+
+      /* image */
+      img {
+        max-width: 60%;
+        height: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- main-container -->
+    <div class="main-container">
+      <!-- container -->
+      <div class="container">
+        <h1>Bulb-On-Off</h1>
+        <div class="box-one">
+          <img src="../assets/images/bulb.gif" alt="Bulb" id="display" />
+        </div>
+
+        <!-- button -->
+        <button type="button" onclick="lightOn()">Light is On</button>
+        <button type="button" onclick="lightOff()">Light is Off</button>
+      </div>
+    </div>
+
+    <script>
+      function lightOn() {
+        document.getElementById("display").src = "https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb-500x500.jpg";
+      }
+
+      function lightOff() {
+        document.getElementById("display").src = "../assets/images/bulboff.jpeg";
+      }
+    </script>
+  </body>
+</html>

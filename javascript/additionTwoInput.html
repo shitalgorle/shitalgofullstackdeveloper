@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        /* container */
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            background-image: url(../assets/images/backchess.jpg);
+        }
+
+        /* box */
+        .box {
+            height: 60vh;
+            width: 30vw;
+            background-color:skyblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        /* button */
+        button{
+            background-color: green;
+            width: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- add two number -->
+    <div class="container">
+        <div class="box">
+            <h1 id="demo">RESULT</h1>
+            <br>
+            <!--for first name-->
+            <input type="number" id="first-number" placeholder="Enter first number">
+            <br>
+            <br>
+            <br>
+            <input type="number" id="second-number" placeholder="Enter second number">
+            <br>
+            <br>
+            <br>
+            <button type="button" onclick="ramu()">Submit</button>
+           
+        </div>
+    </div>
+     <!-- <script>
+        function ramu(){
+            let x= document.getElementById("first-number").value;
+            let y= document.getElementById("second-number").value;
+            let z =x+y;
+            document.getElementById("demo").innerHTML = z;
+        }
+    </script> -->
+     <script>
+        function ramu(){
+            let x= document.getElementById("first-number").value;
+            let y= document.getElementById("second-number").value;
+            let z =Number(x)+Number(y);
+            document.getElementById("demo").innerHTML = z;
+        }
+    </script>
+</body>
+
+</html>

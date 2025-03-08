@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* main-container */
+        .main-container {
+            background-image: url(../../assets/images/back2.jpg);
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* container */
+        .container {
+            height: 80vh;
+            width: 30vw;
+            background-color: gray;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* button */
+        button {
+            background-color: #006BFF;
+            padding: 10px;
+            border-radius: 10px;
+            width: 80%;
+            height: 8%;
+            font-size: 20px;
+        }
+
+        /* input */
+        input {
+            width: 80%;
+            height: 4%;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <div class="container">
+            <h1>Login</h1>
+            <br>
+            <!-- first input -->
+            <input type="text" id="first-name" placeholder="Enter Username">
+            <br/>
+            <br/>
+            <br/>
+            <!-- second input -->
+            <input type="password" id="second-number" placeholder="Enter Password">
+            <br/>
+            <br/>
+            <br/>
+            <!-- button -->
+            <button type="button" onclick="login()">Login</button>
+        </div>
+    </div>
+    <script>
+
+        // process
+        if (password)
+
+        function storeCounter(value) {
+            sessionStorage.setItem("counter", value);
+        }
+    
+        function getCounter() {
+            return sessionStorage.getItem("counter") 
+                ? parseInt(sessionStorage.getItem("counter")) 
+                : 1;
+        }
+    
+        function login() {
+            let x = document.getElementById("first-name").value;
+            let y = document.getElementById("second-number").value;
+
+            let counter = getCounter();
+            if (x === "admin" && y === "technology") {
+                alert("Login successful");
+                storeCounter(1);  
+                window.location.href = "restro.html";  
+            } else {
+                if (counter >= 4) {
+                    alert("You have reached the maximum number of attempts");
+                    document.getElementById("first-name").hidden = true;
+                    document.getElementById("second-number").hidden = true;
+                } else {
+                    alert("Login unsuccessful");
+                    counter++;
+                    storeCounter(counter);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

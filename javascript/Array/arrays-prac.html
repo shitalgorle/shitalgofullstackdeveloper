@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+    <style>
+      /* main-container */
+      .main-container {
+        background-image: url(../../assets/images/nature2.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* container */
+      .container {
+        height: 30%;
+        width: 50%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2em;
+        color: #333;
+      }
+
+      .box {
+        height: 20%;
+        width: 90%;
+        background-color: white;
+        border-style: solid;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- main-container -->
+    <div class="main-container">
+      <div class="container">
+        <h1 style="text-align: center">Array</h1>
+        <br />
+        <div class="box">
+          <h1 id="demo">Result</h1>
+        </div>
+      </div>
+    </div>
+    <script>
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   document.getElementById("demo").innerHTML = months;
+
+      //   const cars = [];
+      //   cars[0] = "CRETA";
+      //   cars[1] = "KIA";
+      //   cars[2] = "BMW";
+      //   document.getElementById("demo").innerHTML = cars;
+
+                // if we swant to show only 1 random month
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      //   document.getElementById("demo").innerHTML = months[2];
+
+                //   use .at
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   let month = months.at(2);
+      //   document.getElementById("demo").innerHTML = month;
+
+                //   change feb = december show all months
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   months[1] = 'December'
+      //   document.getElementById("demo").innerHTML = months;
+
+                  // show only one month
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   months[1] = 'December'
+      //   document.getElementById("demo").innerHTML = months[1];
+
+                  //   convert array to string ( simple output and toString both are same)
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   document.getElementById("demo").innerHTML = months;
+      //   document.getElementById("demo").innerHTML = months.toString();
+
+                   // mix name and number
+
+      //   const months = ["Jan", "Feb", "March", "April", "May", 4];
+      //   document.getElementById("demo").innerHTML = months;
+      //   document.getElementById("demo").innerHTML = months[5];
+
+                   //   diffrent category present in array
+
+      //   const person = { firstName: "John", lastName: "Doe", age: 46 };
+      //   document.getElementById("demo").innerHTML = person.firstName;
+
+      //   const person = { firstName: "John", lastName: "Doe", age: 46 };
+      //   document.getElementById("demo").innerHTML = person.age;
+
+                   // use join
+
+      //   const person = { firstName: "John", lastName: "Doe", age: 46 };
+      //   const personArray = [person.firstName, person.lastName, person.age];
+      //   document.getElementById("demo").innerHTML = personArray.join(" ");
+
+                   //   measure how many elements are presents
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   let i = months.length;
+      //   document.getElementById("demo").innerHTML = i;
+
+                    // add new elements
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months.push("June")
+      // document.getElementById("demo").innerHTML = months;
+
+
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months[months.length] = "JUNE"
+      // document.getElementById("demo").innerHTML = months;
+
+
+
+                 // add new element in 10th number
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months[10] = "dec"
+      // document.getElementById("demo").innerHTML = months;
+
+
+
+                   // join
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   document.getElementById("demo").innerHTML = months.join("*");
+
+
+
+                    // join two array using concat
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   const days = ["Sun","Mon","Tue","Wed"]
+      //   const array1 = months.concat(days)
+      //   document.getElementById("demo").innerHTML = array1;
+
+
+
+                   //   pop(last element delete automatically)
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   months.pop();
+      //   document.getElementById("demo").innerHTML = months;
+
+
+
+                // shift(starting element does not shown)
+
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   months.shift();
+      //   document.getElementById("demo").innerHTML = months;
+
+
+
+                   // unshift(dec add on starting)
+      //   const months = ["Jan", "Feb", "March", "April", "May"];
+      //   months.unshift("dec");
+      //   document.getElementById("demo").innerHTML = months;
+
+
+
+                    // copywithin(first ki jagah pe 2nd ki value place kr dega)
+
+        // const months = ["Jan", "Feb", "March", "April", "May"];
+        // document.getElementById("demo").innerHTML = months.copyWithin(1,3);
+
+
+
+                   // array flat
+
+      // const number = [
+      //   [1, 2],
+      //   [6, 7],
+      //   [4, 5],
+      // ];
+      // const array1 = number.flat();
+      // document.getElementById("demo").innerHTML = array1;
+
+                   // index off(position declared)
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // let position = months.indexOf("April") + 1;(start count from 1)
+      // // let position = months.indexOf("April");(start count from 0)
+      // document.getElementById("demo").innerHTML = "Feb is found in position " + position;
+
+                     // last index(count only last repeated elements)
+
+      // const months = ["Jan", "Feb", "March", "April", "Feb"];
+      // let position = months.lastIndexOf("Feb") + 1;
+      // document.getElementById("demo").innerHTML = "Feb is found in position " + position;
+
+
+                      // sort(arrange in alphabetical order) and tosorted both are same
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months.sort();
+      // document.getElementById("demo").innerHTML = months;
+
+
+                     // SORT NUMERICALLY
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months.sort(function(a, b){return a - b});
+      // document.getElementById("demo").innerHTML = months;
+
+                    // reverse(it reverse the array) reverse and toreverse both are same
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months.reverse();
+      // document.getElementById("demo").innerHTML = months;
+
+
+                 // sort and reverse
+
+      // const months = ["Jan", "Feb", "March", "April", "May"];
+      // months.sort();
+      // months.reverse();
+      // document.getElementById("demo").innerHTML = months;
+
+
+                   // number sort(numbers are arrange in serial from smallest to greatest)
+
+      // const number = [1, 2, 3, 5, 7, 9, 8, 4, 0];
+      // number.sort(function (a, b) {
+      //   return a - b;
+      // });
+      // document.getElementById("demo").innerHTML = number;
+
+
+                    // newdate
+
+      // const d = new Date("2024-12-19");
+      // document.getElementById("demo").innerHTML = d;
+
+
+                   //  output show the value of 3 rd number
+
+      // const d = new Date(2024, 11, 20, 18, 19, 30, 0);
+      // document.getElementById("demo").innerHTML = d;
+
+
+                  // splice(after two 2 values are deleted)
+
+      // const months = ["Jan", "Feb", "March", "April",];
+      // months.splice(2,0,"Nov","Dec");
+      // document.getElementById("demo").innerHTML = months;
+
+
+      // const months = ["Jan", "Feb", "March", "April",];
+      // months.splice(2,0);
+      // document.getElementById("demo").innerHTML = months;
+
+    </script>
+  </body>
+</html>
