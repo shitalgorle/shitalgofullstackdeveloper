@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout</title>
+        <style>
+            /* table */
+            table{
+                width: 90vw;
+                height: 150vh;
+                border-style: solid;
+                background-color: aqua;
+                margin-left: 5vw;
+            }
+            /* tr */
+            tr{
+                width: 90vw;
+                height: 20vh;
+                background-color: blue;
+                border-style: solid;
+            }
+            /* row-one */
+            .row-one{
+                width: 90vw;
+                height: 120px;
+                background-color: lightpink;
+                border-style: solid;
+            }
+            /* row-two */
+            .row-two{
+                width: 90vw;
+                height: 20vh;
+                background-color: skyblue;
+                border-style: solid;
+            }
+             /* row-three */
+            .row-three{
+                width: 90vw;
+                height:20vh ;
+                background-color: salmon;
+                border-style: solid;
+            }
+             /* row-four */
+            .row-four{
+                width: 90vw;
+                height: 40vh;
+                background-color: lightgreen;
+                border-style: solid;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <!-- row-one -->
+            <tr class="row-one">
+                <td class="row-one-coloum"></td>
+                <td class="row-one-coloum"></td>
+                <td class="row-one-coloum"></td>
+                <td class="row-one-coloum"></td>
+            </tr>
+            <!-- row-two -->
+            <tr class="row-two">
+                <td class="row-two-coloum" rowspan="2" colspan="2"></td>
+                <td class="row-two-coloum" colspan="2"></td>
+            </tr>
+            <!-- row-three -->
+            <tr class="row-three">
+                <td class="row-two-coloum" colspan="2"></td>
+            </tr>
+            <!-- row-four -->
+            <tr class="row-four">
+                <td class="row-four-coloum" colspan="4"></td>
+            </tr>
+        </table>
+        
+    </body>
+    
+</html>

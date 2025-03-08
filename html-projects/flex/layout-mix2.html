@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>layout</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 90vh;
+            width: 90vw;
+        }
+
+        /* first-row */
+        .first-row {
+            height: 40%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* one */
+        .one {
+            border-style: solid;
+        }
+
+        /* main */
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+        /* box-x */
+        .box-x {
+            height: 80px;
+            width: 80px;
+            border-style: solid;
+        }
+
+        /* main-one */
+        .main-one {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 15px;
+        }
+
+        /* box-y */
+        .box-y {
+            height: 80px;
+            width: 80px;
+            border-style: solid;
+        }
+
+        /* two */
+        .two {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /* box-a */
+        .box-a {
+            border-style: solid;
+        }
+
+        /* second-row */
+        .second-row {
+            height: 60%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        /* three */
+        .three {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .box-b {
+            border-style: solid;
+        }
+
+        /* four */
+        .four {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        /* box-c */
+        .box-c {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* container */
+        .container {
+            border-style: solid;
+        }
+
+        /* box-d */
+        .box-d {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first-row -->
+        <div class="first-row">
+            <!-- one -->
+            <div class="one">
+                <div class="main">
+                    <div class="box-x"></div>
+                </div>
+                <div class="main-one">
+                    <div class="box-y"></div>
+                </div>
+            </div>
+            <!-- two -->
+            <div class="two">
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+                <div class="box-a"></div>
+            </div>
+        </div>
+        <!-- second-row -->
+        <div class="second-row">
+            <!-- three -->
+            <div class="three">
+                <div class="box-b"></div>
+                <div class="box-b"></div>
+                <div class="box-b"></div>
+            </div>
+            <!-- four -->
+            <div class="four">
+                <div class="box-c">
+                    <div class="container"></div>
+                    <div class="container"></div>
+                </div>
+                <div class="box-d"></div>
+                <div class="box-d"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

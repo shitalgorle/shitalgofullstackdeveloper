@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../one-ex.css">
+    <style>
+       .main-container{
+            height: 100vh;
+            width: 100vw;
+            background-color: skyblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height: 60%;
+            width: 25%;
+            background-color: white;
+            text-align: center;
+            padding-top: 20px;
+        }
+        button {
+            background-color: skyblue;
+            padding: 10px;
+            border-radius: 10px;
+            width: 30%;
+            height: 10%;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- second-container -->
+      <div class="container">
+        <h2>Create an account</h2>
+        <br>
+        <form>
+        <!-- User-name -->
+        <label for="username">Username</label>
+        <input type="text" id="Username" />
+        <br>
+        <br>
+        <br>
+        <!--Gender -->
+        Gender:  <label for="Radio">Male</label>
+                 <input type="radio" name="Gender" />
+                 <label for="Radio">Female</label>
+                 <input type="radio" name="Gender" />
+        <br>
+        <br>
+        <br>
+        <!-- DOB -->
+        <label for="DOB">DOB</label>
+        <input type="date" id="datetime"/>
+        <br />
+        <br />
+        <br>
+        <!-- email id -->
+         <label for="Email id">Email</label>
+         <input type="Email" id="Email" />
+         <br />
+         <br />
+         <br>
+         <h2><button class="signin-btn" type="button" class="Res"><a href="login-five.html" class="submitt-btn">submit</a></button></h2>
+        </form>
+      </div>
+    </div>
+</body>
+</html>

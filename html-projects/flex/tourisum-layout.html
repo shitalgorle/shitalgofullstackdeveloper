@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>layout</title>
+    <style>
+        /* table */
+        table {
+            width: 90vw;
+            height: 150vh;
+            background-color: aqua;
+            margin-left: 5vw;
+            border-style: solid;
+        }
+
+        /* tr */
+        tr {
+            width: 100%;
+            background-color: lightskyblue;
+            border-style: solid;
+        }
+        /* row-one */
+
+        .row-one {
+            height: 100px;
+        }
+
+        /* row-two */
+        .row-two {
+            height: 20vh;
+        }
+
+        /* row-three */
+        .row-three {
+            height: 20vh;
+        }
+
+        /* row-four */
+        .row-four {
+            height: 40vh;
+        }
+
+        /* row-one-coloum */
+        .row-one-coloum {
+            width: 25%;
+            height: 50px;
+            background-color: bisque;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        /* row-two-coloum  */
+        .row-two-coloum {
+            width: 25%;
+            height: 50px;
+            background-color: lightgreen;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        /* row-three-coloum  */
+        .row-three-coloum {
+            width: 25%;
+            height: 50px;
+            background-color: lightcoral;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        /* row-four-coloum  */
+        .row-four-coloum {
+            width: 25%;
+            height: 50px;
+            background-color: lightyellow;
+            border-style: solid;
+            border-width: 2px;
+        }
+
+        /* row-one-coloum-image  */
+        .row-one-coloum-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* row-one-coloum-two-image  */
+        .row-one-coloum-two-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* row-one-coloum-three-image */
+        .row-one-coloum-three-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        /* row-one-coloum-four-image */
+        .row-one-coloum-four-image {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* row-two-coloum-division */
+        .row-two-coloum-division {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        /* row-two-coloum-division-two */
+        .row-two-coloum-division-two {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        /*  */
+
+        /* row-three-coloum-pic */
+        .row-three-coloum-pic {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /* row-four-coloum-text */
+        .row-four-coloum-text {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body style="margin: 0px;">
+    <table>
+        <!-- row-one -->
+        <tr class="row-one">
+            <!-- row-one-coloum -->
+            <td class="row-one-coloum">
+                <div class="row-one-coloum-one-image">
+                    <img src="../../assets/images/manali2.jpg" height="120px" width="300px">
+                </div>
+            </td>
+            <!-- row-one-coloum -->
+            <td class="row-one-coloum">
+                <div class="row-one-coloum-two-image">
+                    <img src="../../assets/images/manali8.jpeg" height="120px" width="300px">
+
+                </div>
+            </td>
+            <!-- row-one-coloum -->
+            <td class="row-one-coloum">
+                <div class="row-one-coloum-three">
+                    <img src="../../assets/images/manali3.jpeg" height="120px" width="300px">
+                </div>
+            </td>
+            <!-- row-one-coloum -->
+            <td class="row-one-coloum">
+                <div class="row-one-coloum-four-image">
+                    <img src="../../assets/images/manali6.jpeg" height="120px" width="300px">
+                </div>
+            </td>
+        </tr>
+        <!-- row-two -->
+        <tr class="row-two">
+            <td class="row-two-coloum" rowspan="2" colspan="2">
+                <div class="row-two-coloum-division">
+                    <img src="../../assets/images/Hd.jpg" width="640px" height="370px">
+
+                </div>
+            </td>
+            <!-- row-two-coloum -->
+            <td class="row-two-coloum" colspan="2">
+                <div class="row-two-coloum-division-two">
+                    <p>
+                        Manali is a town, near Kullu town in Kullu district in the Indian state of Himachal Pradesh.[2]
+                        It is situated in the northern end of the Kullu Valley, formed by the Beas River. The town is
+                        located in the Kullu district, approximately 270 kilometres (170 mi) north of the state capital
+                        of Shimla and 544 kilometres (338 mi) northeast of the national capital of New Delhi. With a
+                        population of 8,096 people recorded in the 2011 Indian census Manali is the beginning of an
+                        ancient trade route through Lahaul (H.P.) and Ladakh, over the Karakoram Pass and onto Yarkand
+                        and Hotan in the Tarim Basin of China. Manali is a popular tourist destination in India and
+                        serves as the gateway to the Lahaul and Spiti district as well as the city of Leh in Ladakh.
+                    </p>
+
+                </div>
+            </td>
+        </tr>
+        <!-- row-three -->
+        <tr class="row-three">
+            <td class="row-three-coloum" colspan="2">
+                <div class="row-three-coloum-pic-two">
+                    <img src="../../assets/images/hd5.jpg" width="640px" height="170px">
+
+                </div>
+            </td>
+        </tr>
+        <!-- row-four -->
+        <tr class="row-four">
+            <td class="row-four-coloum" colspan="4">
+                <div class="row-four-coloum-text">
+                    <img src="../../assets/images/manalih1.jpg" width="420px" height="410px">
+                    <img src="../../assets/images/manalih2.png" width="420px" height="410px">
+                    <img src="../../assets/images/manalih3.jpg" width="420px" height="410px">
+
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</html>

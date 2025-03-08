@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<style>
+    /* container */
+    .container {
+        height: 100vh;
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    /* box-one */
+    .box-one {
+        height: 100px;
+        width: 100px;
+        border-style: solid;
+    }
+
+    @media (min-width:900px) and (max-width:1200px) {
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    @media (min-width:500px) and (max-width:900px) {
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: blue;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    @media (min-width:200px) and (max-width:500px) {
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+</style>
+
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- box-one -->
+        <div class="box-one"></div>
+        <div class="box-one"></div>
+        <div class="box-one"></div>
+    </div>
+</body>
+
+</html>

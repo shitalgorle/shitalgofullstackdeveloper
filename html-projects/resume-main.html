@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background-color: rgb(236, 223, 204);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .box-one, .box-two {
+            padding: 20px;
+        }
+
+        .box-one {
+            flex: 1 1 30%;
+            background-color: rgb(37, 113, 128);
+            color: white;
+        }
+
+        .box-two {
+            flex: 1 1 60%;
+            background-color: rgb(236, 223, 204);
+        }
+
+        /* Contact, Skills, Languages, Education Section Styles */
+        .box-one div {
+            margin-bottom: 20px;
+        }
+
+        .box-one h1 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .box-one a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .box-one a:hover {
+            text-decoration: underline;
+        }
+
+        .box-one img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        .box-one label {
+            display: block;
+            margin: 10px 0 5px;
+            color: white;
+        }
+
+        /* Skills Range Inputs */
+        .box-one input[type="range"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        /* Profile Section */
+        .container-one {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .box-a h1, .box-a h2 {
+            margin: 5px 0;
+            color: #000;
+        }
+
+        .box-b img {
+            border-radius: 50%;
+            max-width: 150px;
+            height: auto;
+        }
+
+        /* About and Experience Section Styles */
+        .container-two, .container-three {
+            margin-bottom: 20px;
+        }
+
+        .container-two h2, .container-three h2 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .container-three p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .box-one, .box-two {
+                flex: 1 1 100%;
+            }
+
+            .container-one {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box-b {
+                justify-content: center;
+                display: flex;
+            }
+
+            .box-b img {
+                max-width: 100px;
+            }
+
+            .container-two, .container-three {
+                padding: 10px;
+            }
+
+            .container-two h2, .container-three h2 {
+                font-size: 1.3em;
+            }
+
+            .container-three h5 {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container-one h1, .container-one h2 {
+                text-align: center;
+                font-size: 1.2em;
+            }
+
+            .box-b img {
+                max-width: 80px;
+            }
+
+            .container-two h2, .container-three h2 {
+                font-size: 1.1em;
+            }
+
+            .container-three p {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 450px) {
+            .box-one, .box-two {
+                flex: 1 1 100%;
+            }
+
+            .container-one {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .box-b {
+                justify-content: center;
+                display: flex;
+            }
+
+            .box-b img {
+                max-width: 100px;
+            }
+
+            .container-two, .container-three {
+                padding: 10px;
+            }
+
+            .container-two h2, .container-three h2 {
+                font-size: 1.3em;
+            }
+
+            .container-three h5 {
+                font-size: 1.1em;
+            }
+
+            @media (max-width: 100px) {
+            .container-one h1, .container-one h2 {
+                text-align: center;
+                font-size: 1.2em;
+            }
+
+            .box-b img {
+                max-width: 80px;
+            }
+
+            .container-two h2, .container-three h2 {
+                font-size: 1.1em;
+            }
+
+            .container-three p {
+                font-size: 0.9em;
+            }
+        }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Left Sidebar: Contact, Skills, Languages, Education -->
+        <div class="box-one">
+            <!-- Contact Section -->
+            <div class="one">
+                <h1>CONTACT</h1>
+                <img src="../assets/images/email.png" height="20px" width="20px">
+                <a href="mailto:gorleshital01@gmail.com">gorleshital01@gmail.com</a>
+                <br><br>
+                <img src="../assets/images/wp.avif" height="20px" width="20px">
+                <a href="tel:+919975788469">91+9975788469</a>
+                <br><br>
+                <img src="../assets/images/location.png" height="20px" width="20px">
+                <a href="#">Inderwada, Katol, MH</a>
+            </div>
+            <!-- Skills Section -->
+            <div class="two">
+                <h1>SKILLS</h1>
+                <label>HTML</label>
+                <input type="range" max="10" value="8">
+                <label>CSS</label>
+                <input type="range" max="10" value="7">
+                <label>SQL</label>
+                <input type="range" max="10" value="6">
+                <label>JavaScript</label>
+                <input type="range" max="10" value="7">
+                <label>Node.js</label>
+                <input type="range" max="10" value="6">
+            </div>
+            <!-- Languages Section -->
+            <div class="three">
+                <h1>LANGUAGES</h1>
+                <label>English</label>
+                <input type="radio" name="english"> Fluent
+                <input type="radio" name="english"> Intermediate
+                <input type="radio" name="english"> Beginner
+
+                <br><br>
+
+                <label>Hindi</label>
+                <input type="radio" name="hindi"> Fluent
+                <input type="radio" name="hindi"> Intermediate
+                <input type="radio" name="hindi"> Beginner
+
+                <br><br>
+
+                <label>Marathi</label>
+                <input type="radio" name="marathi"> Fluent
+                <input type="radio" name="marathi"> Intermediate
+                <input type="radio" name="marathi"> Beginner
+            </div>
+            <!-- Education Section -->
+            <div class="four">
+                <h1>EDUCATION</h1>
+                <p>Completed Bachelor Degree in Engineering, Nagpur University</p>
+                <p>Passed 10+12, Nagpur University</p>
+            </div>
+        </div>
+
+        <!-- Right Section: Name, Profile, About, Experience -->
+        <div class="box-two">
+            <div class="container-one">
+                <!-- Name and Profile Picture -->
+                <div class="box-a">
+                    <h1>Shital Gorle</h1>
+                    <h2>Full Stack Developer</h2>
+                </div>
+                <div class="box-b">
+                    <!-- <img src="../assets/images/profile.webp" alt="Profile Picture"> -->
+                </div>
+            </div>
+            <hr>
+
+            <!-- About Me Section -->
+            <div class="container-two">
+                <h2>ABOUT ME</h2>
+                <p>Creative and analytical marketing professional with a strong academic record and a passion for developing and executing successful marketing campaigns. Seeking an entry-level position where I can use my skills and knowledge to help a company grow its brand and reach its target audience.</p>
+                <p>I know these languages C++, Java, Python, JavaScript, HTML, CSS, Mobile Development, Android Development.</p>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="container-three">
+                <h2>EXPERIENCE</h2>
+                <h5>FULL STACK DEVELOPER (HTML, CSS)</h5>
+                <p>Experienced in HTML and CSS, with front-end development work in various projects.</p>
+                <h3>MIDDLE LAYER:</h3>
+                <p>Node.js, Express.js, API testing</p>
+                <h3>DATABASE:</h3>
+                <p>SQL, PLSQL, Developer, Automation, Database Tester</p>
+                <h3>TOOLS USED FOR DEVELOPER:</h3>
+                <p>Jira, GitHub, Postman, Figma</p>
+                <h3>INTEGRATED DEVELOPMENT INVIRONMENT:</h3>
+                <p>Visual Studio Code, Xcode, Android Studio</p>
+            </div>
+        </div>
+    </div>
+
+</body>

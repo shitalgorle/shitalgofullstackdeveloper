@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <style>
+        /* main-container */
+        .main-container{
+            height: 100vh;
+            width: 100vw;
+            border-style: solid;
+        }
+        /* row-one */
+        .row-one{
+            height: 20%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        /* box-one */
+        .box-one{
+            border-style: solid;
+        }
+        /* row-two */
+        .row-two{
+            height: 20%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        /* box-two */
+        .box-two{
+            border-style: solid;
+        }
+        /* row-three */
+        .row-three{
+            height: 20%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        /* box-three */
+        .box-three{
+            border-style: solid;
+        }
+        /* row-four */
+        .row-four{
+            height: 20%;
+            width: 100%;
+            border-style: solid;
+        }
+        /* row-five */
+        .row-five{
+            height: 20%;
+            width: 100%;
+            display: grid;
+            grid-template-rows:  1fr 1fr;
+        }
+        /* box-four */
+        .box-four{
+            border-style: solid;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- row-one -->
+        <div class="row-one">
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+        </div>
+        <!-- row-two -->
+        <div class="row-two">
+            <div class="box-two"></div>
+            <div class="box-two"></div>
+            <div class="box-two"></div>
+        </div>
+        <!-- row-three -->
+        <div class="row-three">
+            <div class="box-three"></div>
+            <div class="box-three"></div>
+            <div class="box-three"></div>
+            <div class="box-three"></div>
+        </div>
+        <!-- row-four -->
+        <div class="row-four"></div>
+        <!-- row-five -->
+        <div class="row-five">
+            <div class="box-four"></div>
+            <div class="box-four"></div>
+        </div>
+    </div>
+</body>
+</html>

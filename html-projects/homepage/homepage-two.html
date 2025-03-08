@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        /* html */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* body  section*/
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../assets/images/homeab.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* nav section */
+        nav {
+            width: 100%;
+            height: 20%;
+            font-size: 20px;
+        }
+
+        /* ul section */
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* nav-bar */
+        .nav-bar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        /* one section */
+        .one {
+            width: 40%;
+            height: 90%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: center;
+
+        }
+
+
+        /* header-logo section */
+        .header-logo {
+            width: 30%;
+            height: 100%;
+            font-size: 45px;
+            color: black;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        /* two section */
+        .two {
+            width: 40%;
+            height: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 10px;
+        }
+
+        .box-one {
+            height: 500px;
+            width: 100%;
+            background-image: url(../assets/images/homeab.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 100px;
+            font-size: 40px;
+
+        }
+
+        .box-two {
+            height: 600px;
+            width: 100%;
+            background-image: url(../assets/images/background.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+
+        }
+
+
+        .box-A {
+            height: 200px;
+            width: 200px
+        }
+
+        .box-two {
+            height: 600px;
+            width: 100%;
+            background-color: aqua;
+
+
+        }
+
+        .two-A {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .A {
+            height: 300px;
+            width: 300px;
+        }
+
+        .two-B {
+            height: 100%;
+            width: 50%;
+            margin-top: 20px;
+
+        }
+
+        .box-three {
+            height: 600px;
+            width: 100%;
+            background-image: url(../assets/images/home00.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .container-one {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        .container-two {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        .box-four {
+            background-color: lightblue;
+            height: 100px;
+            width: 100%;
+            font-size: 30px;
+            text-align: center;
+           
+        }
+      
+        @media (min-width:900px) and (max-width:1200px) {
+            .nav-bar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        }
+
+        @media (min-width:500px) and (max-width:900px) {
+            .nav-bar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        }
+
+        @media (min-width:200px) and (max-width:500px) {
+            .nav-bar {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- nav-bar -->
+        <div class="nav-bar">
+            <!-- one -->
+            <div class="one">
+                <!-- header-logo section -->
+                <div class="header-logo">Shital</div>
+            </div>
+            <!-- two -->
+            <div class="two">
+                <!-- home section -->
+                <div class="two-one">
+                    <h1><a href="#Home">Home</a></h1>
+                </div>
+                <!-- about section -->
+                <div class="two-one">
+                    <h1><a href="#About">About</a></h1>
+                </div>
+                <!-- project section -->
+                <div class="two-one">
+                    <h1><a href="#Projects">Projects</a></h1>
+                </div>
+                <!-- contact us section -->
+                <div class="two-one">
+                    <h1><a href="#Contact-Us">Contact-Us</a></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- box-one -->
+    <div class="box-one" id="Home">
+        <h1 style="text-align: center;">
+            WelCome To My Portfolio
+        </h1>
+    </div>
+    <!-- box-two -->
+    <div class="box-two" id="About">
+        <div class="two-A">
+            <div class="A">
+                <img src="../assets/images/av.png" height="250px" width="250px">
+               <h2 style="text-align: center;">Shital Domaji Gorle</h2>
+                <h3 style="text-align: center;">Inderwada,Katol,Maharashtra</h3>
+                <h3 style="text-align: center;">Full Stack Developer</h3>
+            </div>
+        </div>
+        <div class="two-B">
+            <h2>About Me:-</h2>
+            <P>
+                Creative and analytical marketing professional with a strong academic record and a passion for
+                developing and executing successful marketing campaigns. Seeking an entry-level position where I can use my skills
+                andknowledge to help a company grow its brand and reach its target audience.
+            </P>
+            <br>
+            <h5>FULL STACK DEVELOPER (HTML-CSS)</h5>
+            <p> I have a lot of work experience in HTML and cascading style sheet(css)with the work experience with front end
+                developer.I work on various of project by using html and css
+            </p>
+            <br>
+            <p>
+                Node javascript(js),Express javascript,<br>
+                API testing
+            </p>
+            <br>
+            <p>
+                SQL,PLSQL.Developer,<br>
+                Automation,Databas Tester,<br>
+                Post javascript(js),selenium cypress
+            </p>
+            <br>
+            <p>
+                I know these language C++,Java,Python,javascript including skills HTML,CSS,javascript,Mobile
+                Development,Android Development.
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <!-- box-three -->
+    <div class="box-three" id="Projects">
+
+        <div class="container-one">
+            <a href="../html-projects/html-projects.html"> <img src="../assets/images/html.jpeg" height="300px"
+                    width="300px"></a>
+        </div>
+
+        <div class="contaoner-two">
+            <a href="../html-projects/css-projects.html"><img src="../assets/images/css.jpg!w700wp" height="300px"
+                    width="300px"></a>
+        </div>
+    </div>
+    <!-- box-four -->
+    <div class="box-four" id="Contact-Us">
+        <div class="four-one">
+            <a href="https://github.com/shitalgorle/shitalFullStackDeveloper">Github</a>
+            <a href="https://www.linkedin.com/login">Linkdin</a>
+           <a href="https://www.facebook.com/login/">Facebook</a>
+            <a href="https://join.skype.com/invite/vjNof6Ekgo61">Skype</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

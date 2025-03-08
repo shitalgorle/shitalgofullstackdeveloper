@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-image: url(../../assets/images/backtab2.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            height: 60%;
+            width: 25%;
+            background-color: white;
+            padding-bottom: 13px;
+            text-align: center;
+        }
+
+        .box-one {
+            height: 25%;
+            width: 100%;
+            background-color: gray;
+            padding-top: 5%;
+        }
+
+        .box-two {
+            height: 75%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .box button {
+            font-size: 2em;
+            padding: 10px;
+            margin: 5px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+        }
+
+        .box button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="box-one">
+                <h1 id="display">0</h1>
+            </div>
+            <div class="box-two">
+
+                <button class="btn" onclick="appendNumber(7)">7</button>
+                <button class="btn" onclick="appendNumber(8)">8</button>
+                <button class="btn" onclick="appendNumber(9)">9</button>
+                <button class="btn" onclick="appendOperator('+')">+</button>
+
+                <button class="btn" onclick="appendNumber(4)">4</button>
+                <button class="btn" onclick="appendNumber(5)">5</button>
+                <button class="btn" onclick="appendNumber(6)">6</button>
+                <button class="btn" onclick="appendOperator('-')">-</button>
+
+                <button class="btn" onclick="appendNumber(1)">1</button>
+                <button class="btn" onclick="appendNumber(2)">2</button>
+                <button class="btn" onclick="appendNumber(3)">3</button>
+                <button class="btn" onclick="appendOperator('*')">*</button>
+
+                <button class="btn" onclick="clearDisplay()">AC</button>
+                <button class="btn" onclick="appendNumber(0)">0</button>
+                <button class="btn" onclick="calculateResult()">=</button>
+                <button class="btn" onclick="appendOperator('/')">/</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function appendNumber(number) {
+            const display = document.getElementById('display');
+            // If the display is '0', replace it with the number, otherwise append the number
+            if (display.innerText === '0' || display.innerText === 'Error') {
+                display.innerText = number;
+            } else {
+                display.innerText += number;
+            }
+        }
+
+        function appendOperator(operator) {
+            const display = document.getElementById('display');
+            const lastChar = display.innerText.slice(-1);
+            if (['+', '-', '*', '/'].includes(lastChar)) {
+                display.innerText = display.innerText.slice(0, -1) + operator;
+            } else {
+                display.innerText += operator;
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').innerText = '0';
+        }
+
+        function calculateResult() {
+            const display = document.getElementById('display');
+            try {
+                display.innerText = eval(display.innerText);
+            } catch {
+                display.innerText = 'Error';
+            }
+        }
+    </script>
+</body>
+
+</html>

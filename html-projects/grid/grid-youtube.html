@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            border-style: solid;
+
+        }
+
+        /* right-box */
+        .right-box {
+            border-style: solid;
+        }
+
+        /* left-box */
+        .left-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        /* box */
+        .box {
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- right-box -->
+        <div class="right-box"><video controls src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" height="100%"
+                width="98%"></video></div>
+        <!-- left-box -->
+        <div class="left-box">
+            <div class="box"><video controls src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" height="100%"
+                    width="100%"></video></div>
+            <div class="box"><video controls src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" height="100%"
+                    width="100%"></video></div>
+            <div class="box"><video controls src="../../assets/videos/file_example_MP4_480_1_5MG.mp4" height="100%"
+                    width="100%"></video></div>
+        </div>
+    </div>
+    <a href="../grid/chess-grid.html"><button type="button">Move To Next</button></a>
+</body>
+
+</html>

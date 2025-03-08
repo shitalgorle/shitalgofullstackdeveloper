@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 90vh;
+            width: 90vw;
+           
+        }
+        .row-one{
+            height: 25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .one{
+            border-style: solid;
+        }
+        .row-two{
+            height: 25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .two{
+            border-style: solid;
+        }
+        .row-three{
+            height: 25%;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+        .three{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .x{
+            border-style: solid;
+        }
+        .three-one{
+            border-style: solid;
+        }
+        .three-two{
+            border-style: solid;
+        }
+        .row-four{
+            height: 25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+        }
+        .four{
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <!-- row-one -->
+        <div class="row-one">
+            <div class="one"></div>
+            <div class="one"></div>
+        </div>
+          <!-- row-two -->
+        <div class="row-two">
+            <div class="two"></div>
+            <div class="two"></div>
+            <div class="two"></div>
+        </div>
+          <!-- row-three -->
+        <div class="row-three">
+            <div class="three">
+                <div class="x"></div>
+                <div class="x"></div>
+            </div>
+            <div class="three-one"></div>
+            <div class="three-two"></div>
+        </div>
+          <!-- row-four -->
+        <div class="row-four">
+            <div class="four"></div>
+            <div class="four"></div>
+            <div class="four"></div>
+        </div>
+    </div>
+</body>
+</html>

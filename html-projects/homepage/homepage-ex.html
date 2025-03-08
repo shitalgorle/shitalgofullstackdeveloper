@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            background-image: url(../assets/images/homeab.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Nav section */
+        nav {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        /* Navbar Styles */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            /* background-color: rgba(0, 0, 0, 0.6); */
+            background-color: #DE3163;
+            color: white;
+        }
+
+        .header-logo {
+            font-size: 30px;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            color: #FFD700;
+        }
+
+        /* Box-One Section */
+        .box-one {
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            /* background-image: url(../assets/images/homeab.avif);
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: black;
+            font-size: 50px;
+            
+        }
+       
+        .box-one h1 {
+            font-size: 50px;
+        }
+
+        /* Box-Two Section */
+        .box-two {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+            background-color: black;
+            /* background-image: url(../assets/images/background.avif);
+            background-repeat: no-repeat;
+            background-size: cover; */
+            padding: 20px;
+        }
+
+        .two-A,
+        .two-B {
+            flex: 1;
+            padding: 20px;
+            color: black;
+        }
+
+        .two-A img {
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+        }
+
+        .two-B p {
+            line-height: 1.8;
+        }
+
+        .two-B h5 {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Box-Three Section */
+        .box-three {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 400px;
+            /* background-image: url(../assets/images/home00.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; */
+            background-color: black;
+            padding: 20px;
+            border-color: white;
+        }
+
+        .box-three img {
+            width: 200px;
+            height: 200px;
+            border-radius: 15px;
+            border-color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .box-three img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Box-Four Section */
+        .box-four {
+            text-align: center;
+            padding: 20px;
+            background-color: #DE3163;
+            font-size: 24px;
+           
+           
+        }
+
+        .box-four a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+          
+            font-size: 18px;
+        }
+
+        .box-four a:hover {
+            color: #FFD700;
+        }
+        button{
+            height: 35px;
+            width: 80px;
+         
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-bar {
+                flex-direction: column;
+            }
+
+            .header-logo {
+                font-size: 24px;
+            }
+
+            ul {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+
+            ul li {
+                margin: 10px 0;
+            }
+
+            ul li a {
+                font-size: 18px;
+            }
+
+            .box-one h1 {
+                font-size: 40px;
+            }
+
+            .box-two {
+                flex-direction: column;
+            }
+
+            .two-A img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .two-B p {
+                font-size: 16px;
+            }
+
+            .box-three {
+                flex-direction: column;
+            }
+
+            .box-three img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .box-one h1 {
+                font-size: 30px;
+            }
+
+            .box-two {
+                flex-direction: column;
+            }
+
+            .two-A img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .two-B p {
+                font-size: 14px;
+            }
+
+            .box-three img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .box-four {
+                font-size: 20px;
+            }
+
+            .box-four a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-bar">
+            <!-- Header Logo -->
+            <div class="header-logo">Shital</div>
+
+            <!-- Navigation Links -->
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact-Us">Contact-Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Box-One Section: Welcome Text -->
+    <!-- <div class="box-one" id="Home">
+    <marquee behavior=" loop" direction="right" scrollamount="5">
+        <h1 style="color:white;">Welcome to My Portfolio <br><br>
+        </h1>
+        </marquee>
+        <div>
+            <button style="text-align: center;"><a href="../html-projects/resume-main.html">Download CV</a></button>
+        </div>
+    </div> -->
+   
+
+
+    <div class="box-one" id="Home">
+        <h1 style="color:white;">Welcome to My Portfolio <br><br><button><a href="../html-projects/resume-main.html">Download CV</a></button></h1>
+    </div>
+
+    <!-- Box-Two Section: About Me -->
+    <div class="box-two" id="About">
+        <div class="two-A">
+            <h1 style="text-align: center;" ><img src="../assets/images/profileimg3.webp" alt="Profile Image"></h1>
+            <h2 style="text-align: center; color: white;">Shital Domaji Gorle</h2>
+            <br>
+            <h3 style="text-align: center; color: white;">Full Stack Developer</h3>
+            <br>
+            <h4 style="text-align: center; color: white;">Inderwada, Katol, Maharashtra</h4>
+        </div>
+        <div class="two-B">
+            <h1 style="color: white;">About Me:-</h1>
+            <br>
+            <p style="color: white;"> Creative and analytical developer with strong academic and professional experience. Seeking to leverage
+                skills to help a company grow its brand and reach its target audience.</p>
+            <h5 style="color: white;">Full Stack Developer (HTML, CSS, JavaScript)</h5>
+            <p style="color: white;"> Experience with HTML, CSS, JavaScript, Node.js, and Express.js for full-stack development. Skilled in
+                building responsive websites and web applications.</p>
+            <br>
+            <p style="color: white;">
+                Node javascript(js),Express javascript,<br>
+                API testing
+            </p>
+            <p style="color: white;">
+                I know these language C++,Java,Python,javascript including skills HTML,CSS,javascript,Mobile
+                Development,Android Development.
+            </p>
+        </div>
+    </div>
+
+    <!-- Box-Three Section: Projects -->
+    <h1 style="color: white; text-align: center; background-color: black;">Projects</h1>
+    <div class="box-three" id="Projects">
+        <div class="container-one">
+            <a href="../html-projects/html-projects.html">
+                <img src="../assets/images/html.jpeg" alt="HTML Projects">
+            </a>
+        </div>
+
+        <div class="container-two">
+            <a href="../html-projects/css-projects.html">
+                <img src="../assets/images/css.jpg!w700wp" alt="CSS Projects">
+            </a>
+        </div>
+        <div class="container-three">
+            <a href="../html-projects/javacript-projects.html">
+                <img src="../assets/images/javascript.jpg" alt="JAVASCRIPT Projects">
+            </a>
+        </div>
+        <div class="container-four">
+            <a href="../html-projects/boostrap-projects.html">
+                <img src="../assets/images/boostrap.webp" alt="JAVASCRIPT Projects">
+            </a>
+        </div>
+        <div class="container-five">
+            <!-- <a href="https://docs.google.com/spreadsheets/d/1BgQ3n9t0p6hthN-ZdpRdSGc7_IfKJpbQTd1UMHCDApI/edit?gid=0#gid=0"> -->
+                <img src="../assets/images/testcase.jpg" alt="JAVASCRIPT Projects">
+            </a>
+        </div>
+    </div>
+
+    <!-- Box-Four Section: Contact Links -->
+    <div class="box-four" id="Contact-Us">
+        <a href="https://github.com/shitalgorle/shitalFullStackDeveloper">Github</a>
+        <a href="https://www.linkedin.com/login">LinkedIn</a>
+        <a href="https://www.facebook.com/login/">Facebook</a>
+        <a href="https://join.skype.com/invite/vjNof6Ekgo61">Skype</a>
+    </div>
+</body>
+
+</html>

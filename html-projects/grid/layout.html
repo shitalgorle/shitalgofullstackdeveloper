@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <style>
+        /* body */
+          body{
+            background-image: url("../../assets/images/bac.india.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        /* main-container */
+        .main-container {
+            height: 90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+        }
+        /* first-row */
+        .first-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        /* box */
+        .box {
+            border-style: solid;
+            background-color: aqua;
+        }
+        /* second-row */
+        .second-row {
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+        }
+        /* right-box */
+        .right-box {
+            border-style: solid;
+            background-color: blue;
+        }
+        /* left-box */
+        .left-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            background-color: blueviolet;
+        }
+        /* box-two */
+        .box-two {
+            border-style: solid;
+        }
+        /* third-row */
+        .third-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color:peru;
+        }
+        /* box-three */
+        .box-three {
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first-row -->
+        <div class="first-row">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <!-- second-row -->
+        <div class="second-row">
+            <!-- right-box -->
+            <div class="right-box">
+                <div class="box-one"></div>
+            </div>
+            <!-- left-box -->
+            <div class="left-box">
+                <div class="box-two"></div>
+                <div class="box-two"></div>
+            </div>
+        </div>
+        <!-- third-row -->
+        <div class="third-row">
+            <div class="box-three"></div>
+            <div class="box-three"></div>
+            <div class="box-three"></div>
+        </div>
+    </div>
+    <a href="../grid/grid-youtube.html"><button type="button">Next</button></a>
+</body>
+
+</html>

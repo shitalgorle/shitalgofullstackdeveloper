@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Layout</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 90vh;
+            width: 90vw;
+            background-color: aqua;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+        /* first-row */
+        .first-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        /* box */
+        .box {
+            border-style: solid;
+        }
+        /* second-row */
+        .second-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        /* box-one */
+        .box-one {
+            border-style: solid;
+        }
+        /* third-row */
+        .third-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        /* box-two */
+        .box-two {
+            border-style: solid;
+        }
+        /* forth-row */
+        .forth-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        /* box-three */
+        .box-three {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border-style: solid;
+        }
+        /* two */
+        .two{
+            border-style: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first-row -->
+        <div class="first-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <!-- second-row -->
+        <div class="second-row">
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+        </div>
+        <!-- third-row -->
+        <div class="third-row">
+            <div class="box-two"></div>
+            <div class="box-two"></div>
+            <div class="box-two"></div> 
+        </div>
+        <!-- forth-row -->
+        <div class="forth-row">
+            <div class="box-three">
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+            <div class="box-three">
+                <div class="three"></div>
+                <div class="three"></div> 
+            </div>
+            <div class="box-three"></div> 
+        </div> 
+        </div>
+    </div>
+
+</body>
+
+</html>

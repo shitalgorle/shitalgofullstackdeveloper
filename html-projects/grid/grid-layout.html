@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Layout</title>
+    <style>
+        /* main-container */
+        .main-container{
+            height: 90vh;
+            width: 90vw;
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+          
+        }
+        /* first-row */
+        .first-row{
+            border-style: solid;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        /* box */
+        .box{
+            border-style: solid;
+        }
+        /* second-row */
+        .second-row{
+            border-style: solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        /* right-box */
+        .right-box{
+            border-style: solid;
+        }
+        /* left-box */
+        .left-box{
+            border-style: solid;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        /* one */
+        .one{
+            border-style: solid;
+        }
+        /* third-row */
+        .third-row{
+            border-style: solid;
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+        /* two */
+        .two{
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- first-row -->
+        <div class="first-row">
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <!-- second-row -->
+        <div class="second-row">
+            <!-- right-box -->
+            <div class="right-box"></div>
+            <!-- left-box -->
+            <div class="left-box">
+                <div class="one"></div>
+                <div class="one"></div>
+            </div>
+            <!-- third-row -->
+            <div class="third-row">
+                <div class="two"></div>
+                <div class="two"></div>
+                <div class="two"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

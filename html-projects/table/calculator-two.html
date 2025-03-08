@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        th {
+            height: 15vh;
+            background-color: lightgray;
+            border-style: solid;
+        }
+
+        table,
+        td,
+        tr {
+            background-color: white;
+            border-style: solid;
+            border-collapse: collapse;
+            text-align: center;
+            height: 12vh;
+            width: 25vw;
+        }
+    </style>
+</head>
+<script>
+    function numberType(chintu) {
+        document.getElementById("display").innerHTML += chintu;
+    }
+    // function additionFunction() {
+       
+
+    // }
+    // function subtractionFunction() {
+        
+    // }
+    
+    // function multiplicationFunction() {
+    // }
+    // function divisionFunction() {
+    // }
+    function equalstoo() {
+        const display = document.getElementById('display');
+        try {
+            display.innerText = eval(display.innerText);
+        } catch {
+            display.innerText = 'Error';
+        }
+
+    }
+    function clearfunc() {
+        document.getElementById('display').innerHTML = "";
+    }
+    function deleteLast() {
+        const display = document.getElementById('display');
+        if (display.innerText.length === 1 || display.innerText === 'Error') {
+            display.innerText = '0';
+        } else {
+            display.innerText = display.innerText.slice(0, -1);
+        }
+    }
+    
+
+
+</script>
+
+<body>
+    <div class="container">
+        <table>
+            <!-- row-one -->
+            <tr>
+                <th colspan="6">
+                    <h1 id="display"></h1>
+                </th>
+            </tr>
+            <!-- row-two -->
+            <tr>
+                <td><button class="btn" onclick="numberType(7)">7</button></td>
+                <td><button class="btn" onclick="numberType(8)">8</button></td>
+                <td><button class="btn" onclick="numberType(9)">9</button></td>
+                <td><button onclick="deleteLast()">Del</button></td>
+                <td><button class="btn" onclick="numberType('%')">%</button></td>
+            </tr>
+            <!-- row-three -->
+            <tr>
+                <td><button class="btn" onclick="numberType(4)">4</button></td>
+                <td><button class="btn" onclick="numberType(5)">5</button></td>
+                <td><button class="btn" onclick="numberType(6)">6</button></td>
+                <td><button class="btn" onclick="numberType('*')">*</button></td>
+                <td><button class="btn" onclick="numberType('/')">/</button></td>
+            </tr>
+            <!-- row-four -->
+            <tr>
+                <td><button class="btn" onclick="numberType(1)">1</button></td>
+                <td><button class="btn" onclick="numberType(2)">2</button></td>
+                <td><button class="btn" onclick="numberType(3)">3</button></td>
+                <td rowspan="2"><button class="btn" onclick="numberType('+')">+</button></td>
+                <td><button class="btn" onclick="numberType('-')">-</button</td>
+            </tr>
+            <!-- row-five -->
+            <tr>
+                <td style="background-color: brown;"><button type="button" onclick="clearfunc()">AC</button></td>
+                <td><button class="btn" onclick="numberType(0)">0</button></td>
+                <td><button class="btn" onclick="numberType('.')">.</button></td>
+                <td><button class="btn" onclick="equalstoo('=')">=</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

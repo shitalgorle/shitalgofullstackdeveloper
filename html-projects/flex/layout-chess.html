@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout</title>
+    <style>
+        /* body */
+        body{
+            background-image: url("../../assets/images/backchess.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        /* main */
+        .main{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        /* main-container */
+        .main-container {
+            height: 80vh;
+            width: 80vw;
+            background-color: aqua;
+            border-style: solid;
+        
+        }
+        /* row-one */
+        .row-one {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-one {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-two {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-three {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-four {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-five {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-six {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-seven {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-eight {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+
+        /* row-two */
+        .row-two {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-nine {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-ten {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-eleven {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-twelve {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-thirteen {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-fourteen {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-fifteen {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-sixteen {
+            height: 100%;
+            width: 12.5%;
+        }
+        /* row-three */
+        .row-three {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-seventeen {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-eighteen {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-nineteen {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-twenty {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+
+        .box-aone {
+            height: 100%;
+            width: 12.5%;  
+        }
+        .box-atwo {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-athree {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-afour {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        /* row-four */
+        .row-four {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-afive {
+            height: 100%;
+            width: 12.5%;
+            background-color: black; 
+        }
+        .box-asix {
+            height: 100%;
+            width: 12.5%;          
+        }
+        .box-aseven {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;           
+        }
+        .box-aeight {
+            height: 100%;
+            width: 12.5%;        
+        }
+        .box-anine {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;           
+        }
+        .box-aten {
+            height: 100%;
+            width: 12.5%;       
+        }
+        .box-aeleven {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;     
+        }
+        .box-atwelve {
+            height: 100%;
+            width: 12.5%;     
+        }
+        /* row-five */
+        .row-five {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-a {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-b {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-c {
+            height: 100%;
+            width: 12.5%;       
+        }
+        .box-d {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-e {
+            height: 100%;
+            width: 12.5%;     
+        }
+        .box-f {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-g {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-h {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        } 
+        /* row-six */
+        .row-six {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-i {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+            
+        }
+        .box-j {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-k {
+            height: 100%;
+            width: 12.5%; 
+            background-color: black;
+               
+        }b
+        .box-l {
+            height: 100%;
+            width: 12.5%;
+        
+        }
+        .box-m {
+            height: 100%;
+            width: 12.5%; 
+            
+          
+        }
+        .box-n {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-o {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-p {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        } 
+        /* row-seven */
+        .row-seven {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-q {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-r {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-s {
+            height: 100%;
+            width: 12.5%;       
+        }
+        .box-t {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-u {
+            height: 100%;
+            width: 12.5%;     
+        }
+        .box-v {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-w {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-x {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }  
+         /*row-eight  */
+        .row-eight {
+            height: 12.5%;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-y {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-z {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-1 {
+            height: 100%;
+            width: 12.5%;  
+            background-color: black;     
+        }
+        .box-2 {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-3 {
+            height: 100%;
+            width: 12.5%; 
+            background-color: black;    
+        }
+        .box-4 {
+            height: 100%;
+            width: 12.5%;
+        }
+        .box-5 {
+            height: 100%;
+            width: 12.5%;
+            background-color: black;
+        }
+        .box-6 {
+            height: 100%;
+            width: 12.5%;
+        }                           
+    </style>
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main">
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- row-one -->
+        <div class="row-one">
+            <div class="box-one"></div>
+            <div class="box-two"></div>
+            <div class="box-three"></div>
+            <div class="box-four"></div>
+            <div class="box-five"></div>
+            <div class="box-six"></div>
+            <div class="box-seven"></div>
+            <div class="box-eight"></div>
+        </div>
+        <!-- row-two -->
+        <div class="row-two">
+            <div class="box-nine"></div>
+            <div class="box-ten"></div>
+            <div class="box-eleven"></div>
+            <div class="box-twelve"></div>
+            <div class="box-thirteen"></div>
+            <div class="box-fourteen"></div>
+            <div class="box-fifteen"></div>
+            <div class="box-sixteen"></div>
+        </div>
+        <!-- row-three -->
+        <div class="row-three">
+            <div class="box-seventeen"></div>
+            <div class="box-eighteen"></div>
+            <div class="box-nineteen"></div>
+            <div class="box-twenty"></div>
+            <div class="box-aone"></div>
+            <div class="box-atwo"></div>
+            <div class="box-athree"></div>
+            <div class="box-afour"></div>
+        </div>
+        <!-- row-four -->
+        <div class="row-four">
+            <div class="box-afive"></div>
+            <div class="box-asix"></div>
+            <div class="box-aseven"></div>
+            <div class="box-aeight"></div>
+            <div class="box-anine"></div>
+            <div class="box-aten"></div>
+            <div class="box-aeleven"></div>
+            <div class="box-atwelve"></div>
+        </div>
+        <!-- row-five -->
+        <div class="row-five">
+            <div class="box-a"></div>
+            <div class="box-b"></div>
+            <div class="box-c"></div>
+            <div class="box-d"></div>
+            <div class="box-e"></div>
+            <div class="box-f"></div>
+            <div class="box-g"></div>
+            <div class="box-h"></div>
+        </div>
+        <!-- row-six -->
+        <div class="row-six">
+            <div class="box-i"></div>
+            <div class="box-j"></div>
+            <div class="box-k"></div>
+            <div class="box-l"></div>
+            <div class="box-m"></div>
+            <div class="box-n"></div>
+            <div class="box-o"></div>
+            <div class="box-p"></div>
+        </div>
+        <!-- row-seven -->
+        <div class="row-seven">
+            <div class="box-q"></div>
+            <div class="box-r"></div>
+            <div class="box-s"></div>
+            <div class="box-t"></div>
+            <div class="box-u"></div>
+            <div class="box-v"></div>
+            <div class="box-w"></div>
+            <div class="box-x"></div>
+        </div>
+        <!-- row-eight -->
+        <div class="row-eight">
+            <div class="box-y"></div>
+            <div class="box-z"></div>
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+            <div class="box-4"></div>
+            <div class="box-5"></div>
+            <div class="box-6"></div>
+        </div>
+    </div>
+</div>
+<a href="../flex/layout-table-two.html"><button type="button">Move To Next Layout</button></a>
+</body>
+
+</html>

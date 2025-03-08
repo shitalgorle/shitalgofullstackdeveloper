@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout</title>
+    <style>
+        /* main-container */
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            border-style: solid;
+        }
+
+        /* row-one */
+        .row-one {
+            height: 25%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        /* box-one */
+        .box-one {
+            border-style: solid;
+        }
+          /* row-two */
+        .row-two {
+            height: 25%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        /* one-box */
+        .one-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        /* container-one */
+        .container-one {
+            border-style: solid;
+        }
+
+        /* two-box */
+        .two-box {
+            border-style: solid;
+        }
+
+        /* three-box */
+        .three-box {
+            border-style: solid;
+        }
+
+        /* four-box */
+        .four-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        /* container-two */
+        .container-two {
+            border-style: solid;
+        }
+
+        /* row-three */
+        .row-three {
+
+            height: 25%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        .five-box {
+            border-style: solid;
+        }
+        /* row-four */
+        .row-four {
+            height: 25%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+
+        .eight-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .container-three {
+            border-style: solid;
+        }
+
+        .nine-box {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .container-four {
+            border-style: solid;
+        }
+
+        .ten-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .container-five {
+            border-style: solid;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- main-container -->
+    <div class="main-container">
+        <!-- row-one -->
+        <div class="row-one">
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+            <div class="box-one"></div>
+        </div>
+        <!-- row-two -->
+        <div class="row-two">
+            <!-- one-box -->
+            <div class="one-box">
+                <div class="container-one"></div>
+                <div class="container-one"></div>
+            </div>
+            <!-- two-box -->
+            <div class="two-box"></div>
+            <!-- three-box -->
+            <div class="three-box"></div>
+            <!-- four-box -->
+            <div class="four-box">
+                <div class="container-two"></div>
+                <div class="container-two"></div>
+            </div>
+        </div>
+        <!-- row-three -->
+        <div class="row-three">
+            <div class="five-box"></div>
+            <div class="five-box"></div>
+            <div class="five-box"></div>
+        </div>
+        <!-- row-four -->
+        <div class="row-four">
+            <!-- eight-box -->
+            <div class="eight-box">
+                <div class="container-three"></div>
+                <div class="container-three"></div>
+            </div>
+            <!-- nine-box -->
+            <div class="nine-box">
+                <div class="container-four"></div>
+                <div class="container-four"></div>
+            </div>
+            <!-- ten-box -->
+            <div class="ten-box">
+                <div class="container-five"></div>
+                <div class="container-five"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
